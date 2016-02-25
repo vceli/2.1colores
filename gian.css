@@ -1,0 +1,49 @@
+body{
+	background-color: purple;
+}
+
+.visible-green{
+	display: none;
+}
+
+
+@media print{
+	h1{
+		font-size: 60px;
+	}
+
+	/*body{
+		background-color: green; al momento de imprimir te quita todo background peor con este co
+	}*/
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1600px){
+	body{
+		background-color: blue;
+	}
+}
+
+@media screen and (min-width: 668px) and (max-width: 1024px){
+	body{
+		background-color: red;
+	}
+}
+
+@media screen and(min-width: 376px) and (max-width: 667px){
+	body{
+		background-color: yellow;
+	}
+}
+
+@media screen and (min-width: 320px) and (max-width: 375px){
+	body{
+		background-color: green;
+
+	}
+
+	.visible-green{
+		display: block;
+	}
+}
+
+
